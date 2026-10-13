@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FloodAdapt — Coming soon</title>
+  <meta name="description" content="FloodAdapt helps cities explore what-if flood scenarios and test adaptation strategies. Our new website is coming soon.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..800;1,400..600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0D2B3E;
+      --slate: #557B90;
+      --slate-light: #A9BCC6;
+      --shallow: #BFDCEA;
+      --paper: #F2F6F8;
+      --muted: #C9D8DF;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #fff;
+      background: var(--navy);
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      background:
+        linear-gradient(180deg, rgba(13,43,62,.92) 0%, rgba(13,43,62,.78) 45%, rgba(13,43,62,.55) 100%),
+        url("assets/img/coming-soon-bg.jpg") 35% 45% / cover no-repeat,
+        var(--navy);
+    }
+    main {
+      align-self: center;
+      width: 100%;
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: clamp(3rem, 10vh, 6rem) clamp(1.25rem, 5vw, 2.5rem);
+    }
+    .wordmark { font-size: clamp(2.6rem, 2rem + 3vw, 4rem); letter-spacing: -0.02em; line-height: 1; margin: 0; }
+    .wm-flood { font-weight: 500; color: var(--slate-light); }
+    .wm-adapt { font-weight: 800; color: #fff; }
+    .tagline { font-style: italic; color: var(--shallow); font-size: 1.2rem; margin: .6rem 0 2.5rem; }
+    .status {
+      font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+      font-weight: 650; line-height: 1.25; letter-spacing: -0.01em;
+      margin: 0 0 1rem; max-width: 28ch;
+    }
+    p { font-size: 1.125rem; line-height: 1.6; color: var(--muted); margin: 0 0 1rem; max-width: 60ch; }
+    .contact { margin-top: 2rem; }
+    .contact a {
+      display: inline-block; color: #fff; font-weight: 650; text-decoration: none;
+      padding: .75rem 1.25rem; border: 2px solid var(--shallow); border-radius: 6px;
+    }
+    .contact a:hover { background: var(--shallow); color: var(--navy); }
+    a:focus-visible { outline: 3px solid var(--shallow); outline-offset: 3px; }
+    footer {
+      padding: 1.25rem clamp(1.25rem, 5vw, 2.5rem);
+      font-size: .875rem; color: var(--slate-light);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main>
+      <h1 class="wordmark"><span class="wm-flood">Flood</span><span class="wm-adapt">Adapt</span></h1>
+      <p class="tagline">Built on science. Designed for decisions.</p>
+
+      <p class="status">Our new website is on its way.</p>
+      <p>FloodAdapt lets cities explore what-if flood scenarios, test adaptation strategies and see the impacts and benefits in minutes, without a modelling background.</p>
+      <p>We’re preparing a full site with demos and examples. In the meantime, we’re happy to talk.</p>
+
+      <!-- Change the email address below (twice), or delete this block. -->
+      <p class="contact"><a href="mailto:info@floodadapt.com">Email info@floodadapt.com</a></p>
+    </main>
+    <footer>Developed at Deltares</footer>
+  </div>
+</body>
+</html>
